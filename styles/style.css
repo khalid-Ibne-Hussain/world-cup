@@ -352,7 +352,12 @@ mobile responsive
     }
 
     .single-blog {
-        width: 550px;
+        max-width: 550px;
+    }
+
+    .flag span {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     /* footer----------------- */
@@ -369,6 +374,10 @@ mobile responsive
     .footer-content ul {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .hide-blog {
+        display: none;
     }
 
     .view-more {
