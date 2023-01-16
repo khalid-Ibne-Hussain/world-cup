@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.body {
+    max-width: 1321px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 130px;
+}
+
+/* ==============================================================
+banner part css 
+==============================================================*/
+.banner {
+    /* max-width: 1321px; */
+    background: #161616;
+    border-radius: 30px;
+    margin-top: 50px;
+
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 33px;
+    gap: 24px;
+    background: linear-gradient(to right, transparent, rgba(161, 187, 190, 0.384));
+    border-radius: 30px;
+
+}
+
+.banner-txt {
+    max-width: 531px;
+    max-height: 424px;
+
+}
+
+.banner-txt h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.banner-txt p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+.banner-img {
+    /* width: 100%; */
+    max-width: 581px;
+    height: 613px;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    width: 187px;
+    height: 56px;
+    background: #DD0000;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* ==============================================================
+banner part css END
+==============================================================*/
+
+/* ==============================================================
+main part css 
+==============================================================*/
+.main-container {
+    display: flex;
+    gap: 24px;
+
+}
+
+.quick-links {
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;
+
+}
+
+.quick-btn {
+    width: 252px;
+    height: 64px;
+    color: #161616;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 30px rgba(14, 13, 13, 0.233);
+}
+
+.red-quick {
+    background: #DD0000;
+    color: #FFFFFF;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* ==============================================================
+Left side  END 
+==============================================================*/
+
+/* ==============================================================
+Right blogs 
+==============================================================*/
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+
+}
+
+.single-blog {
+    width: 312px;
+    /* height: 362px; */
+    border-radius: 5px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+
+}
+
+.single-blog img {
+    width: 100%;
+}
+
+.blog-txt {
+    padding: 20px 20px;
+}
+
+.transfer-btn {
+    width: 100px;
+    height: 32px;
+    border: 2px solid #161616;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #161616;
+}
+
+.blog-txt h5 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #161616;
+}
+
+.blog-txt p {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+/* ==============================================================
+Footer
+==============================================================*/
+
+.footer {
+    background: #161616;
+    /* width: 100%; */
+}
+
+.footer-content {
+    max-width: 1321px;
+    text-align: center;
+    padding: 130px 0;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.footer-content hr {
+    max-width: 1320px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px 0;
+}
+
+.footer-content ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content ul>li {
+    list-style: none;
+    color: #B9B9B9;
+}
+
+.s-icon {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.s-icon p>a {
+
+    /* padding: 20px; */
+    height: 40px;
+    width: 40px;
+    /* border: 2px solid white; */
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px rgba(240, 236, 236, 0.267);
+
+}
+
+
+
+/* ==================================================================================
+mobile responsive
+================================================================================== */
+@media screen and (max-width:576px) {
+
+    .body {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    .banner {
+        max-width: 550px;
+        /* margin: 20px; */
+        margin-top: 20px;
+    }
+
+    .banner-container {
+        flex-direction: column;
+        text-align: center;
+        /* padding: 0 20px; */
+        /* width: 334px; */
+        row-gap: 20px;
+    }
+
+    .banner-txt {
+        width: 450px;
+        /* height: 178px; */
+    }
+
+    .banner-txt h1 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .banner-txt p {
+        /* width: 258px; */
+        height: 80px;
+        font-weight: 400;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .banner-img {
+        width: 400px;
+        height: 420px;
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 161px;
+        height: 40px;
+    }
+
+    /* Banner done------------------ */
+
+    .main-container {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .quick-links {
+        background: none;
+        margin-top: 50px;
+        /* margin-bottom: 20px; */
+    }
+
+    #btn-resize {
+        width: 180px;
+        height: 60px;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .single-blog {
+        width: 550px;
+    }
+
+    /* footer----------------- */
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content hr {
+        margin: 20px 10px;
+        /* max-width: 550px; */
+
+    }
+
+    .footer-content ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+}
+
+
+
+/* ==================================================================================
+tablet responsive
+================================================================================== */
+@media screen and (min-width:577px) and (max-width:768px) {
+    .body {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .banner {
+        max-width: 745px;
+        /* margin: 20px; */
+        margin-top: 20px;
+        /* padding: 20px; */
+        /* gap: 0; */
+    }
+
+
+    .banner-txt {
+        width: 300px;
+        height: 250px;
+    }
+
+    .banner-txt h1 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .banner-txt p {
+        /* width: 258px; */
+        height: 80px;
+        font-weight: 400;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .banner-img {
+        width: 300px;
+        height: 320px;
+        object-fit: cover;
+
+
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 161px;
+        height: 40px;
+    }
+
+    /* Banner done------------------ */
+
+    .main-container {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .quick-links {
+        height: 0;
+        background: none;
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+
+    section {
+        margin-top: 100px;
+    }
+
+    .quick-btn {
+        width: 210px;
+        height: 50px;
+    }
+
+    .blog-container {
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .single-blog {
+        width: 351px;
+    }
+
+    /* footer----------------- */
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content hr {
+        margin: 20px 10px;
+        /* max-width: 550px; */
+
+    }
+
+    .footer-content ul {
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+
+    .hide-blog {
+        display: none;
+    }
+
+}
