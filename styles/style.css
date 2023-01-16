@@ -78,6 +78,15 @@ banner part css
     font-size: 20px;
     color: #FFFFFF;
     border: none;
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #DD0000;
+    transition: 0.5s;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 20px #DD0000;
 }
 
 /* ==============================================================
@@ -110,6 +119,7 @@ main part css
     border-radius: 10px;
     border: none;
     box-shadow: 0px 4px 30px rgba(14, 13, 13, 0.233);
+    cursor: pointer;
 }
 
 .red-quick {
@@ -140,13 +150,21 @@ Right blogs
 }
 
 .single-blog {
-    width: 312px;
+    max-width: 312px;
     /* height: 362px; */
     border-radius: 5px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
 
 }
 
+/* only for match */
+.flag {
+    display: flex;
+    text-align: center;
+    margin: 10px;
+}
+
+/* only for match */
 .single-blog img {
     width: 100%;
 }
@@ -177,6 +195,13 @@ Right blogs
     font-weight: 400;
     font-size: 16px;
     color: rgba(22, 22, 22, 0.7);
+}
+
+.view-more {
+    visibility: hidden;
+    /* display: none; */
+    margin-top: 50px;
+    text-align: center;
 }
 
 /* ==============================================================
@@ -239,6 +264,13 @@ Footer
 
 }
 
+.flag-txt {
+    text-align: center;
+}
+
+.flag span {
+    padding-top: 30px;
+}
 
 
 /* ==================================================================================
@@ -337,6 +369,10 @@ mobile responsive
     .footer-content ul {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .view-more {
+        display: none;
     }
 
 
@@ -446,6 +482,10 @@ tablet responsive
 
     .hide-blog {
         display: none;
+    }
+
+    .view-more {
+        visibility: visible;
     }
 
 }
